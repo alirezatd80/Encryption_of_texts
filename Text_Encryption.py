@@ -1,15 +1,24 @@
+def Encryption(text):
+    result = ''
+    for i in text:
+        numchar = ord(i) * 2 +10
+        result += chr(numchar)
+    print('your result is : ', result)
+
+
 while True:
     inputText = input('enter your text :')
-    resulttext = ""
     
-    orderinput = input('1 for Encryption\n2 for decoding\n3 for exit ')
+    
+    orderinput = input('1 for Encryption\n2 for decoding\n3 for exit\nyour order : ')
     
     if orderinput == "1":
-        pass
+        Encryption(inputText)
     elif orderinput == "2":
-        pass
+        Decoding(inputText)
     elif orderinput == "3":
-        pass
+        print('thanks bye')
+        break
     else:
-        pass
+        print('enter correct order')
     
