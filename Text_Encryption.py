@@ -5,6 +5,12 @@ def Encryption(text):
         result += chr(numchar)
     print('your result is : ', result)
 
+def Decoding(text):
+    result = ''
+    for i in text:
+        numchar = (ord(i)-10)//2
+        result += chr(numchar)
+    print('your result is : ' , result)
 
 while True:
     inputText = input('enter your text :')
